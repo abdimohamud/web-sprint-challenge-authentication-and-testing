@@ -1,42 +1,39 @@
 {
-  "name": "nodeauth-challenge",
+  "name": "web-sprint-challenge-authentication-and-testing",
   "version": "1.0.0",
-  "description": "Authentication Sprint Challenge",
+  "description": "**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js", 
+    "server": "nodemon --require dotenv/config index.js",
     "start": "node index.js",
-    "test": "jest --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LambdaSchool/Sprint-Challenge-Authentication.git"
+    "url": "git+https://github.com/abdimohamud/web-sprint-challenge-authentication-and-testing.git"
   },
   "keywords": [],
-  "author": "Lambda School",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LambdaSchool/Sprint-Challenge-Authentication/issues"
+    "url": "https://github.com/abdimohamud/web-sprint-challenge-authentication-and-testing/issues"
   },
-  "homepage": "https://github.com/LambdaSchool/Sprint-Challenge-Authentication#readme",
+  "homepage": "https://github.com/abdimohamud/web-sprint-challenge-authentication-and-testing#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "helmet": "^3.22.0",
+    "helmet": "^4.1.1",
     "jest": "^26.5.3",
     "jsonwebtoken": "^8.5.1",
-    "knex": "^0.21.0",
+    "knex": "^0.21.6",
     "pg": "^8.4.1",
-    "sqlite3": "^4.1.1",
+    "sqlite3": "^5.0.0",
     "supertest": "^5.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
-  },
-  "jest": {
-    "testEnvironment": "node"
-}
-
+  }
 }
